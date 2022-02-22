@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.test {
+  background-color: aquamarine;
+  min-height: 500px;
+  width: 70%;
+  margin: 0 auto;
+}
+.test .box {
+  height: 200px;
+  width: 50%;
+  background-color: bisque;
+}
+.test .media-box {
+  width: 500px;
+  height: 100px;
+  background-color: blueviolet;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+  .test {
+    background-color: red;
+  }
+}
+@media all and (max-width: 600px) {
+  .test .media-box {
+    max-width: 300px;
+  }
+}
+.photos {
+  max-width: 940px;
+  min-height: 300px;
+  margin: 0 auto;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+}
+.photos .photo {
+  max-width: 300px;
+}
+.photos .photo img {
+  display: block;
+}
+.photos .photo p {
+  font-size: 11px;
+  font-style: italic;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .photos {
+    width: 300px;
+    flex-direction: column;
+    min-height: 940px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

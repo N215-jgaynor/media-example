@@ -1,0 +1,38 @@
+.photos {
+  max-width: 940px;
+  min-height: 300px;
+  // telling the browser that it can go as small as it wants but no bigger than this
+  margin: 0 auto;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+
+  .photo {
+    max-width: 300px;
+
+    img {
+      display: block;
+    }
+
+    p {
+      font-size: 11px;
+      font-style: italic;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .photos {
+    width: 300px;
+    flex-direction: column;
+    // padding-bottom: 40px;
+    min-height: 940px;
+
+    .photo {
+      // margin-bottom: 20px;
+    }
+  }
+}
+
+// using min heights will allow you to make easier changes later on, for example adding new content

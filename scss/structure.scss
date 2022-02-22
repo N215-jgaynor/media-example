@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.test {
+  background-color: aquamarine;
+  min-height: 500px;
+  width: 70%;
+  margin: 0 auto;
+
+  .box {
+    height: 200px;
+    width: 50%;
+    background-color: bisque;
+  }
+
+  .media-box {
+    width: 500px;
+    height: 100px;
+    background-color: blueviolet;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+  .test {
+    background-color: red;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .test {
+    .media-box {
+      max-width: 300px;
+    }
+  }
+}
